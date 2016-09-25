@@ -4,7 +4,7 @@
   "description": "Just Web Server made on NodeJs",
   "main": "index.js",
   "dependencies": {
-    "serve-favicon": "^2.3.0"
+    "serve-favicon": "^2.3.0".
      "ejs": "2.3.3",
     "express": "4.13.3", 
     "cool-ascii-faces": "~1.3"
