@@ -6,6 +6,11 @@ var middleware = require('./middleware.js');
 
 app.use(middleware.logger);
 
+app.configure(function(){
+    app.use(express.bodyParser());
+    app.use(express.static(path.join(__dirname, 'dist')));
+});
+
 app.get('/about', middleware.requireAuthentication, function (req, res) {
 	res.send('About Us!');
 });
